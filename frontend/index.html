@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ornitología Mallorca - Inicio</title>
+  <link rel="prefetch" href="/partials/header.html">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+  <link rel="stylesheet" href="/css/global.css">
+
+
+</head>
+
+<body>
+  <div id="site-header" data-include="/partials/header.html"></div>
+
+  <!-- TODO -->
+  <section class="hero text-center py-5">
+    <video class="video-bg" autoplay muted loop playsinline>
+      <source src="video/sky.mp4" type="video/mp4" />
+      Tu navegador no soporta el video.
+    </video>
+    <div class="container">
+      <div class="hero-box">
+        <h1 class="display-4 mb-4">Ornitología Mallorca</h1>
+        
+        <p class="lead mb-4">
+          Esta página acerca la ornitología de Mallorca a todo el mundo. Descubre especies locales, 
+          sus curiosidades, animales migratorios y aquellos en peligro de extinción, y conecta con la 
+          riqueza natural de nuestra isla.
+        </p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap btn-group">
+          <a href="/pages/catalogo.html" class="btn btn-light btn-lg">Explorar Catálogo</a>
+          <a href="/pages/sobre-nosotros.html" class="btn btn-outline-light btn-lg">Conocer Equipo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/includes.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/index.js"></script>
+
+
+</body>
+<main>
+  <section class="container my-5 py-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="container">
+            <div id="aves-carousel-root" class="mb-4"></div>
+        </div>
+      </div>
+      <div class="col-md-6 ">
+        <div class="row g-4">
+          <div class="col-6">
+            <div class="stats-card text-center p-3">
+              <div class="number display-6" id="speciesCount">N/A</div>
+              <div class="label">Especies registradas</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stats-card text-center p-3">
+              <div class="number display-6" id="parquesCount">N/A</div>
+              <div class="label">Parques / Reservas</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stats-card text-center p-3">
+              <div class="number display-6" id="jardinesCount">N/A</div>
+              <div class="label">Jardines botánicos</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stats-card text-center p-3">
+              <div class="number display-6" id="centrosCount">N/A</div>
+              <div class="label">Centros de recuperación</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+            <div id="aves-carousel-root" class="mb-4"></div>
+            <div id="lugares-carousel-root"></div>
+    </div>
+  </section>
+
+  
+  <div id="site-header" data-include="/partials/footer.html"></div>
+</main>
+
+</html>

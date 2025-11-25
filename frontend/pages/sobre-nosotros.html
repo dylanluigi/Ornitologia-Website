@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros - Ornitología Mallorca</title>
+  <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+  <link rel="prefetch" href="/partials/header.html">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/global.css">
+  <script>
+    function playVideo() {
+      document.querySelector(".video-placeholder img").style.display = "none";
+      document.querySelector(".play-button").style.display = "none";
+      document.getElementById("yt-video").style.display = "block";
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <div id="site-header" data-include="/partials/header.html"></div>
+
+
+  <section class="hero-section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold mb-4">Protegiendo la Avifauna de Mallorca para las Generaciones Futuras</h1>
+          <p class="lead mb-4">Dedicados a la conservación de especies endémicas y en peligro, trabajamos cada día por un futuro donde las aves de las Baleares prosperen.</p>
+          <a href="/pages/como-contribuir.html" class="btn btn-dark btn-lg">Únete a Nosotros</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container mb-5">
+    <div class="row mb-5">
+      <div class="col-lg-10 mx-auto text-center">
+        <p class="lead">
+          Ornitología Mallorca fue fundada para hacer la conservación de aves accesible a través de la tecnología.
+          Lo que comenzó como una herramienta simple de gestión ha evolucionado en una plataforma integral de educación y conservación.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="vision-mission-card">
+          <div class="icon-circle">
+            <img src=/img/Icons/view.svg alt="Vision Icon" style="width:30px; height:30px;" class="icon-white">
+          </div>
+          <h3 class="h4 mb-3">Visión</h3>
+          <p class="mb-0">
+            Un archipiélago donde cada especie de ave tiene un futuro asegurado, y donde las comunidades locales
+            son guardianes activos de su patrimonio natural, garantizando la biodiversidad para las próximas generaciones.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="vision-mission-card">
+          <div class="icon-circle">
+            <img src=/img/Icons/target.svg alt="Target Icon" style="width:30px; height:30px;" class="icon-white">
+          </div>
+          <h3 class="h4 mb-3">Misión</h3>
+          <p class="mb-0">
+            Proteger y restaurar las poblaciones de aves mediante investigación científica, educación comunitaria,
+            y colaboración con instituciones locales e internacionales para la gestión sostenible de ecosistemas críticos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="principles-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+      <h2 class="display-6 fw-bold mb-4">Construido sobre <span style="color: var(--color-primary)">Principios</span><br>Que Importan</h2>
+
+          <div class="principle-item">
+            <div class="principle-number">1</div>
+            <div>
+              <h5>Conservación Basada en Ciencia</h5>
+              <p class="text-muted mb-0">Todas nuestras acciones están respaldadas por investigación rigurosa y datos científicos.</p>
+            </div>
+          </div>
+
+          <div class="principle-item">
+            <div class="principle-number">2</div>
+            <div>
+              <h5>Educación Continua</h5>
+              <p class="text-muted mb-0">Creemos que la educación es la clave para la conservación a largo plazo.</p>
+            </div>
+          </div>
+
+          <div class="principle-item">
+            <div class="principle-number">3</div>
+            <div>
+              <h5>Transparencia</h5>
+              <p class="text-muted mb-0">Compartimos abiertamente nuestros métodos, resultados y desafíos con la comunidad.</p>
+            </div>
+          </div>
+
+          <div class="principle-item">
+            <div class="principle-number">4</div>
+            <div>
+              <h5>Colaboración Local</h5>
+              <p class="text-muted mb-0">Trabajamos codo a codo con comunidades locales y organizaciones regionales.</p>
+            </div>
+          </div>
+        </div>
+
+       <div class="col-lg-6">
+          <div class="video-placeholder" onclick="playVideo()">
+            <img src="/img/Aves/upupa_epops1.jpg" alt="Pardela balear">
+            <div class="play-button">▶</div>
+            <iframe id="yt-video"
+              width="560" height="315"
+              src="https://www.youtube.com/embed/29RLPiUoC4U?si=9ro0hvIEn2DwfIZB&autoplay=1"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              style="display:none; width:100%; height:100%;">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="container my-5 py-5">
+    <div class="text-center mb-5">
+      <h2 class="display-6 mb-3">
+        Construido por <span style="color: var(--color-primary)">Expertos</span><br>
+        Respaldado por <span style="color: #999">Pasión</span>
+      </h2>
+    </div>
+
+    <div id="teamGrid" class="row g-4 mb-4"></div>
+    <div id="teamEmpty" class="text-muted text-center d-none">No se pudo cargar el equipo.</div>
+
+    <div class="text-center">
+      <p class="text-muted mb-4">
+        Nuestro equipo está formado por ornitólogos, biólogos, educadores y tecnólogos comprometidos con la conservación.
+        Cada miembro aporta años de experiencia y una pasión inquebrantable por proteger las aves de Mallorca.
+      </p>
+      <!-- <a href="/pages/sobre-nosotros.html" class="btn btn-dark">Conocer Equipo</a> -->
+    </div>
+  </section>
+
+  
+  <section class="container my-5 py-5">
+    <div class="row mb-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="display-6 mb-3">Los <span style="color: var(--color-primary)">Números</span> Detrás de Nuestra Misión</h2>
+        <p class="text-muted">
+          Desde el inicio de nuestras operaciones en 2020, hemos logrado avances significativos en la protección
+          de la avifauna balear. Estos números reflejan nuestro compromiso inquebrantable con la conservación.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="stats-card">
+          <div class="number" id="speciesCount">N/A</div>
+          <div class="label">Especies Protegidas</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="stats-card">
+          <div class="number">12,500</div>
+          <div class="label">Hectáreas Conservadas</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="stats-card">
+          <div class="number">230+</div>
+          <div class="label">Voluntarios Activos</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="stats-card">
+          <div class="number">89%</div>
+          <div class="label">Tasa de Éxito en Recuperación</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="container my-5 py-5">
+    <div class="row">
+      <div class="col-lg-5 mb-4 mb-lg-0">
+        <h2 class="display-6 mb-3">
+          Tienes <span style="color: var(--color-primary)">Preguntas</span>,<br>
+          Tenemos <span style="color: #999">Respuestas</span>
+        </h2>
+      </div>
+      <div class="col-lg-7">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                ¿Cómo puedo contribuir a la conservación de aves?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Hay múltiples formas: puedes unirte como voluntario, participar en programas de monitoreo,
+                hacer donaciones, o simplemente educar a otros sobre la importancia de proteger nuestras aves.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                ¿Qué especies están en mayor peligro en Mallorca?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                La Pardela Balear está en peligro crítico, junto con especies como el Milano Real y la Malvasía Cabeciblanca.
+                Trabajamos activamente en programas de recuperación para todas estas especies.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                ¿Organizan actividades educativas para escuelas?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Sí, ofrecemos talleres educativos, visitas guiadas a parques naturales y material didáctico
+                para escuelas de toda Mallorca. Contacta con nosotros para programar una actividad.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                ¿Cómo reporto un ave herida o en peligro?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Puedes contactar directamente con el COFIB (Consorcio para la Recuperación de Fauna) o con
+                los centros de recuperación listados en nuestra sección "Cómo Contribuir".
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="container">
+    <div class="cta-banner">
+      <h2 class="display-6 mb-4">Únete a Nuestro Esfuerzo de Conservación</h2>
+      <p class="lead mb-4">
+        Conéctate con voluntarios, científicos y amantes de las aves que trabajan juntos por un futuro sostenible
+      </p>
+      <a href="/pages/como-contribuir.html" class="btn btn-light btn-lg">Comenzar Ahora</a>
+    </div>
+  </section>
+
+  <!-- TODO fix duplicate header -->
+
+  <div id="site-header" data-include="/partials/footer.html"></div>
+
+  
+  <!-- <footer class="text-center py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>Ornitología Mallorca</h5>
+          <p class="small mb-0">Protegiendo las aves de las Baleares</p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h6>Enlaces</h6>
+          <div class="d-flex flex-column">
+            <a href="/index.html" class="text-white-50 small text-decoration-none mb-1">Home</a>
+            <a href="/pages/catalogo.html" class="text-white-50 small text-decoration-none mb-1">Catálogo</a>
+            <a href="/pages/mapas.html" class="text-white-50 small text-decoration-none">Mapa</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h6>Contacto</h6>
+          <p class="small text-white-50 mb-0">info@ornitologiamallorca.org</p>
+        </div>
+      </div>
+      <hr class="my-3 bg-white opacity-25">
+      <p class="mb-0 small">© 2025 Ornitología Mallorca. Todos los derechos reservados.</p>
+    </div>
+  </footer> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/includes.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/sobreNosotros.js"></script>
+</body>
+</html>

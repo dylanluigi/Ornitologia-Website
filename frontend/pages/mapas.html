@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Mallorca - Ornitología Mallorca</title>
+  <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+  <link rel="prefetch" href="/partials/header.html">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/global.css">
+</head>
+
+<body>
+  <div id="site-header" data-include="/partials/header.html"></div>
+
+  <main class="container-fluid px-4 py-5">
+    <section id="MapaAves" class="map-section">
+      <div class="map-header">
+        <h1 class="mb-3">Mapa de Aves de Mallorca</h1>
+        <p class="lead mb-0">
+          Explora la distribución de especies aviares en los parques naturales y reservas de Mallorca
+        </p>
+      </div>
+
+      <div id="mapContainer">
+        <div class="loading">Cargando mapa y datos de aves...</div>
+      </div>
+    </section>
+
+    <section id="DensidadEspecies" class="map-section">
+      <div class="map-header">
+        <h2 class="mb-3">Densidad de Especies por Municipio</h2>
+        <p class="lead mb-0">
+          Mapa coroplético mostrando la diversidad de aves en cada municipio de Mallorca por estación
+        </p>
+      </div>
+
+      <div class="season-controls-muni">
+        <h6 class="mb-3"><strong>Seleccionar Estación</strong></h6>
+        <button class="btn btn-outline-secondary season-btn-muni active" data-season="Primavera">Primavera</button>
+        <button class="btn btn-outline-secondary season-btn-muni" data-season="Verano">Verano</button>
+        <button class="btn btn-outline-secondary season-btn-muni" data-season="Otoño">Otoño</button>
+        <button class="btn btn-outline-secondary season-btn-muni" data-season="Invierno">Invierno</button>
+      </div>
+
+      <div id="neighborhoodMap">
+        <div class="loading">Cargando mapa de municipios...</div>
+      </div>
+
+      <!-- <div class="map-legend">
+        <h6 class="mb-3"><strong>Leyenda del Mapa</strong></h6>
+      </div> -->
+    </section>
+
+    <section>
+      <div class="row gx-4">
+        <div class="col-md-6">
+          <section id="#AvesFamilia" class="map-section"></section>
+          <div class="map-header">
+            <h2 class="mb-3">Número de aves por familia</h2>
+            <p class="lead mb-0">Gráfico de columnas con el número de especies agrupadas por familia</p>
+          </div>
+
+          <div id="reproductionChart">
+            <div class="loading">Cargando gráfico de épocas de reproducción...</div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-6">
+          <section id="AvesConservacion" class="map-section"></section>
+          <div class="mb-3">
+            <label id="patterns-enabled-label" class="form-check-label">
+              <input type="checkbox" id="patterns-enabled" class="form-check-input" checked>
+              Activar patrones de color (accesibilidad para daltonismo)
+            </label>
+          </div>
+          <div class="map-header">
+            <h2 class="mb-3">Número total de aves por categoría de conservación</h2>
+            <p class="lead mb-0">Gráfico donut con el reparto por categoría de conservación</p>
+          </div>
+
+          <div id="conservationChart" style="height:420px; width:100%; margin-bottom:30px;">
+            <div class="loading">Cargando gráfico de categorías de conservación...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <div id="site-header" data-include="/partials/footer.html"></div>
+
+  <!-- <footer class="text-center py-3 mt-5">
+    <p class="mb-0">2025 Ornitología Mallorca</p>
+  </footer> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/includes.js"></script>
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/tiledwebmap.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  <script src="https://code.highcharts.com/modules/pattern-fill.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/maps.js"></script>
+</body>
+</html>
