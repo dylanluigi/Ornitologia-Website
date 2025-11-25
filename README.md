@@ -82,12 +82,6 @@ Mobile Version             |  Desktop Version
 | **MySQLi** | Extensión nativa | Interfaz de acceso a base de datos |
 | **MySQL / MariaDB** | 5.7+ / 10.x+ | Sistema de gestión de base de datos relacional |
 
-### Infraestructura de Desarrollo
-
-- **Servidor Web**: PHP Built-in Server (desarrollo) / Apache/Nginx (producción)
-- **Servidor Frontend**: Python HTTP Server / Node.js serve (desarrollo)
-- **Control de Versiones**: Git
-
 ---
 
 ## Arquitectura del Sistema
