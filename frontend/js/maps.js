@@ -892,7 +892,6 @@ async function createConservationChart() {
         const data = entries.map(([k, v]) => ({ name: k, y: v }));
         const total = data.reduce((s, d) => s + d.y, 0);
 
-        // Define base colors
         const pieColors = [
             '#5c91a3',
             '#c2dde4',
@@ -916,7 +915,6 @@ async function createConservationChart() {
             '#9cc5cf'
         ];
 
-        // Define pattern fills for accessibility
         const patterns = pieColors.map((color, i) => ({
             pattern: {
                 path: {
@@ -1010,7 +1008,6 @@ async function createConservationChart() {
             series: [{ name: 'Aves', colorByPoint: true, data: data }]
         });
 
-        // Enable pattern toggle checkbox
         const patternsCheckbox = document.getElementById('patterns-enabled');
         if (patternsCheckbox) {
             patternsCheckbox.onclick = function () {
