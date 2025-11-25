@@ -342,8 +342,8 @@ require $file;
 #### 1. Clonar o Descargar el Repositorio
 
 ```bash
-git clone <repository-url> Practica-ADIU-master
-cd Practica-ADIU-master
+git clone https://github.com/dylanluigi/Ornitologia-Website
+cd Ornitologia-Website
 ```
 
 #### 2. Configuración de la Base de Datos
