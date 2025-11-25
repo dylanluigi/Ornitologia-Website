@@ -13,7 +13,7 @@
 **Página web del proyecto:**  
 https://ornitologia.rf.gd/
 
-**Github del proyecto**
+**Github del proyecto:**
 https://github.com/dylanluigi/Ornitologia-Website
 
 </div>
