@@ -23,16 +23,12 @@ https://github.com/dylanluigi/Ornitologia-Website
 ## Índice
 
 1. [Descripción del Proyecto](#descripción-del-proyecto)
-2. [Contexto y Objetivos](#contexto-y-objetivos)
-3. [Tecnologías Utilizadas](#tecnologías-utilizadas)
-4. [Arquitectura del Sistema](#arquitectura-del-sistema)
-5. [Estructura del Código](#estructura-del-código)
-6. [Diseño de Base de Datos](#diseño-de-base-de-datos)
-7. [Instrucciones de Instalación y Ejecución](#instrucciones-de-instalación-y-ejecución)
-8. [Endpoints de la API](#endpoints-de-la-api)
-9. [Guía de Desarrollo](#guía-de-desarrollo)
-10. [Resolución de Problemas](#resolución-de-problemas)
-11. [Referencias Bibliográficas](#referencias-bibliográficas)
+2. [Tecnologías Utilizadas](#tecnologías-utilizadas)
+3. [Arquitectura del Sistema](#arquitectura-del-sistema)
+4. [Estructura del Código](#estructura-del-código)
+5. [Instrucciones de Instalación y Ejecución](#instrucciones-de-instalación-y-ejecución)
+6. [Endpoints de la API](#endpoints-de-la-api)
+7. [Referencias Bibliográficas](#referencias-bibliográficas)
 
 ---
 
