@@ -1,1 +1,42 @@
-.vscode
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment and configuration
+.env
+.env.local
+.env.*.local
+
+# PHP
+vendor/
+composer.lock
+*.log
+
+# Node.js (if you add npm later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# Logs
+logs/
+*.log
