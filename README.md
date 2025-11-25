@@ -19,7 +19,6 @@ https://github.com/dylanluigi/Ornitologia-Website
 </div>
 
 ---
----
 
 ## Índice
 
@@ -56,7 +55,7 @@ Nos centramos en crear dicha pagina por el mal estado o inexistencia de este tip
 
 Mobile Version             |  Desktop Version
 :-------------------------:|:-------------------------:
-![Mobile](assets/mobileView.gif){ .image25percent }  |  ![Desktop](assets/desktopGif.gif){ .image25percent }
+![Mobile](assets/mobileView.gif)  |  ![Desktop](assets/desktopGif.gif)
 
 
 
