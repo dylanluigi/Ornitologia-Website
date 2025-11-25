@@ -3,7 +3,7 @@
 <!-- ABRIR CON UN VISUALIZADOR MARKDOWN O VISITAR GITHUB PARA VER GIFS Y DIAGRAMAS MERMAID CORRECTAMENTE -->
 
 # **Ornitología Mallorca**  
-## *Proyecto Final – Práctica 1*  
+## *Práctica 1*  
 ## *Asignatura: Aplicaciones Distribuidas en Internet e Interfaces de Usuario (ADIU)*
 
 ### **Integrantes del Grupo**  
